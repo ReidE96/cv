@@ -16,7 +16,7 @@
 % multiple column lists
 \usepackage{multicol}
 
-\newcommand{\startgrades}{\vspace{-0.3em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
+\newcommand{\startgrades}{\vspace{-0.2em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
 \newcommand{\finishgrades}{\end{multicols}\end{itemize}}
 \newcommand{\singlegrade}[2]{\startgrades \item #1 \item #2 \finishgrades}
 \newcommand{\doublegrade}[4]{\startgrades \item #1 \item #2 \item #3 \item #4 \finishgrades}
@@ -52,6 +52,7 @@
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+\vspace{-3em}
 
 \section{Education}
 	\cventry{2009--2014}{BEng Software Engineering}{University of Edinburgh}{UK}{\textbf{(Ongoing)}}{  % arguments 3 to 6 can be left empty
@@ -81,21 +82,16 @@
 
 	\subsection{Non-Vocational}
 	\cventry{Aug 2009 -- Sept 2010 (Seasonal)}{Kitchen Porter}{National Trust for Scotland}{Brodick, Isle of Arran}{}{Pre-opening duties, kitchen work, front of house, post-closing cleanup}
+
+\section{Languages}
+	\cvitem{Programming}{PHP, Java, SQL, Javascript, Haskell, jQuery, Python, C\#, VB.NET}
+	\cvitemwithcomment{English}{Native Speaker}{}
+	\cvitemwithcomment{German}{Conversational}{2\begin{math}\frac{1}{2}\end{math} years schooling, German exchange visit to N{\"u}rnberg}
 	
 \section{Projects}
 	\cvitem{GameClosure Devkit}{Contributed code both to core functionality (timestep, basil) and plugins \newline{}(googleanalytics), both via GitHub and IRC. {\footnotesize(github.com/gameclosure)}}
 	\cvitem{AirDrive}{Project to permit usage of initally Gmail, and latterly any IMAP inbox, as cloud\newline{}storage. Development mostly ceased around late 2010-early 2011 following\newline{}increased adoption of Dropbox and similar.}
 	\cvitem{Tabletop Roleplay Online}{Combined personal interest in tabletop RPGs with an intent to dabble in C\# to create a classic client-server TCP multi-user chat client with dice rolling\newline{}functionality}
-
-\section{Programming Languages}
-	\cvdoubleitem{PHP}{Expert, extreme familiarity}{Haskell}{Intermediate, strong familiarity}
-	\vspace{-0.1\baselineskip}
-	\cvdoubleitem{Java}{Expert, strong familiarity}{jQuery}{Intermediate, medium familiarity}
-	\vspace{-0.1\baselineskip}
-	\cvdoubleitem{SQL}{Expert, strong familiarity}{Python}{Intermediate, medium familiarity}
-	\vspace{-0.1\baselineskip}
-	\cvdoubleitem{Javascript}{Competent, strong familiarity}{C\#}{Intermediate, medium familiarity}
-	\vspace{-0.1\baselineskip}
 
 \section{Interests}
 	\cvitem{Roleplaying}{GEAS {\footnotesize(Edinburgh University Roleplaying Society)} President 2013--14, Secretary 2012--13, Nationals Coordinator 2011--12\newline{}Conpulsion {\footnotesize(www.conpulsion.org)} Coordinator 2014, Guest Liason 2013}
@@ -111,10 +107,6 @@
 		\item A Level \textit{2009}
 			\doublegrade{Pure Mathematics}{A}{Physics}{A}
 		\end{itemize}}  % arguments 3 to 6 can be left empty
-
-\section{Languages}
-	\cvitemwithcomment{English}{Native Speaker}{}
-	\cvitemwithcomment{German}{Conversational}{2\begin{math}\frac{1}{2}\end{math} years schooling, German exchange visit to N{\"u}rnberg}
 
 %\section{Extra 1}
 %	\cvlistitem{Item 1}
