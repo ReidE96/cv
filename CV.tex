@@ -1,0 +1,274 @@
+\documentclass[sans,a4paper]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% font
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex or lualatex, replace by the encoding you are using
+
+% multiple column lists
+\usepackage{multicol}
+
+\newcommand{\startgrades}{\vspace{-0.3em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
+\newcommand{\finishgrades}{\end{multicols}\end{itemize}}
+\newcommand{\grade}[2]{\startgrades \item #1 \item #2 \finishgrades}
+\newcommand{\doublegrade}[4]{\startgrades \item #1 \item #2 \item #3 \item #4 \finishgrades}
+\newcommand{\course}[2]{\hspace{2em}\cvitem{\emph{#1}}{#2}\vspace{0.2em}}
+
+% adjust the page margins
+\usepackage[scale=0.75,left=1in,right=1in,top=0.5in,bottom=0.5in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% simplifying nths
+\usepackage[super]{nth}
+
+% personal data
+\firstname{Euan}
+\familyname{Reid}
+\address{2/2 Huntingdon Place}{Edinburgh EH7 4AT}    % optional, remove / comment the line if not wanted
+\phone[mobile]{+44~7540~371~076}                     % optional, remove / comment the line if not wanted
+\phone[fixed]{+44~131~237~0286}                      % optional, remove / comment the line if not wanted
+\email{euan@reide96.com}                          % optional, remove / comment the line if not wanted
+\homepage{www.reide96.com}                    % optional, remove / comment the line if not wanted
+\social[linkedin]{euanfreid}                        % optional, remove / comment the line if not wanted
+\social[twitter]{EuanReid}                             % optional, remove / comment the line if not wanted
+\social[github]{ReidE96}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}            % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+    \cventry{Jun 2013 -- Sept 2013}{Intern}{Interface 3}{Edinburgh}{}
+    {Developed a trio of Android and iOS games using the GameClosure devkit and based on recent autism research to help autistic children develop and improve social understanding}
+
+	\cventry{Jun 2012 --
+	Sept 2012}{Backend Developer}{Accendo Design}{Edinburgh}{}{LAMP development at fast-paced startup, developing a web-based tool for property management powered by ooPHP. Also created PINFUD markup language for UX design, and wrote Javascript code for frontend}
+
+	\cventry{Jul 2011 -- Aug 2011}{Web Intern}{Fashion Rocks}{Edinburgh}{}{SEO for charity fashion event, plus Magento work for event's online shop\newline{}General LAMP backend support for additional sites}
+
+	\subsection{Non-Vocational}
+	\cventry{Aug 2009 -- Sept 2010 (Seasonal)}{Kitchen Porter}{National Trust for Scotland}{Brodick, Isle of Arran}{}{Pre-opening duties, kitchen work, front of house, post-closing cleanup}
+	
+\section{Projects}
+	\cvitem{GameClosure Devkit}{Contributed code both to core functionality (timestep, basil) and plugins \newline{}(googleanalytics), both via GitHub and IRC. {\footnotesize(github.com/gameclosure)}}
+	\cvitem{AirDrive}{Project to permit usage of initally Gmail, and latterly any IMAP inbox, as cloud\newline{}storage. Development mostly ceased around late 2010-early 2011 following\newline{}increased adoption of Dropbox and similar.}
+	\cvitem{Tabletop Roleplay Online}{Combined personal interest in tabletop RPGs with an intent to dabble in C\# to create a classic client-server TCP multi-user chat client with dice rolling\newline{}functionality}
+
+\section{Programming Languages}
+	\cvdoubleitem{PHP}{Expert, extreme familiarity}{Haskell}{Intermediate, strong familiarity}
+	\vspace{-0.1\baselineskip}
+	\cvdoubleitem{Java}{Expert, strong familiarity}{jQuery}{Intermediate, medium familiarity}
+	\vspace{-0.1\baselineskip}
+	\cvdoubleitem{SQL}{Expert, strong familiarity}{Python}{Intermediate, medium familiarity}
+	\vspace{-0.1\baselineskip}
+	\cvdoubleitem{Javascript}{Competent, strong familiarity}{C\#}{Intermediate, medium familiarity}
+	\vspace{-0.1\baselineskip}
+
+\section{Interests}
+	\cvitem{Roleplaying}{GEAS {\footnotesize(Edinburgh University Roleplaying Society)} President 2013--14, Secretary 2012--13, Nationals Coordinator 2011--12\newline{}Conpulsion {\footnotesize(www.conpulsion.org)} Coordinator 2014, Guest Liason 2013}
+	\vspace{-0.1\baselineskip}
+	\cvitem{Archery}{EUAC Webmaster 2010--11}
+	\vspace{-0.1\baselineskip}
+	\cvitem{Karate}{EUSKC Treasurer 2010--11, Social Secretary 2010--11, Interim Secretary 2010--11}
+
+\section{Education}
+	\cventry{2009--2014}{BEng Software Engineering}{University of Edinburgh}{Edinburgh}{\textbf{(Ongoing)}}{  % arguments 3 to 6 can be left empty
+		Broad and in-depth coverage of various elements of informatics, from basics of functional programming, to software testing based on the IEEE syllabus, natural language processing, and expectations of a computing professional in a professional environment.\newline{}
+%
+		\textbf{Courses}\newline{}
+		\textit{\nth{1} Year}
+		\begin{itemize}
+		\begin{multicols}{2}
+		\item Functional Programming
+		\item Computation and Logic
+		\item Mathematics for Informatics 1
+		\item Mind, Matter, and Language
+		\item Object Oriented Programming
+		\item Data and Analysis
+		\item Mathematics for Informatics 2
+		\item Logic 1
+		\end{multicols}
+		\end{itemize}
+%
+		\textit{\nth{2} Year}
+		\begin{itemize}
+		\begin{multicols}{2}
+		\item Processing Formal and Natural Languages
+		\item Introduction to Computer Systems
+		\item Introduction to Software Engineering
+		\item Mathematics for Informatics 3
+		\item Algorithms, Data Structures, and Learning
+		\item Reasoning and Agents
+		\item Mathematics for Informatics 4
+		\item Proofs and Problem Solving
+		\end{multicols}
+		\end{itemize}
+%
+		\textit{\nth{3} Year}
+		\begin{itemize}
+		\begin{multicols}{2}
+		\item Algorithms and Data Structures
+		\item Database Systems
+		\item Operating Systems
+		\item Professional Issues
+		\item Software Engineering Large Practical
+		\item Software Engineering with Objects\newline{}and Components
+		\item Computer Communications and Networks
+		\item Computer Security
+		\item Foundations of Natural Language\newline{}Processing
+		\item Software Testing
+		\item System Design Project
+		\end{multicols}
+		\end{itemize}
+%
+		\subsection{\hspace{-8em}Software Engineering Large Practical}
+		Using the Android Developer Toolkit, planned and deployed an app targetting Android 2.3.3 intended to aid students in getting involved with student association elections, including voting, reading statements, rating candidates, and tweeting to encourage others to vote.
+%
+		\subsection{\hspace{-8em}System Design Project}
+		Working in a team, designed and build a robot using LEGO Mindstorms and complementary technologies, demonstrated in a tournament against similar robots judged by professionals from the IT industry. Various companies awarded prizes, with Google giving theirs to our team.
+%
+		\subsection{\hspace{-8em}Final Year Project}
+		\cvitem{title}{\emph{Javascript with Blame}}
+		\cvitem{supervisor}{Phil Wadler}
+		The project aims to build a tool, based on blame calculus (a simple way to interface statically, dynamically, and polymorphically typed languages), to enable cross-module type declarations in Javascript, monitoring type discipline and reporting which module is at fault should discipline be violated.
+	}
+
+
+%		\course{Functional Programming}{Using Haskell as an example, covered core principles of functional\newline{}
+%		programming, focussing on recursion, currying, and list comprehension.}
+%		\course{Computation and Logic}{An introduction to the notions of computation and specification\newline{}
+%		using finite-state systems and propositional logic.}
+%		\course{Object-Oriented Programming}{A conceptual and practical introduction to OOP, through the medium\newline{}
+%		of Java. Also covering general principles of programming in imperative\newline{}
+%		and object oriented frameworks.}
+%		\course{Data and Analysis}{An introduction to representing and interpreting data from areas\newline{}
+%		across informatics; treating in particular structured, semi-structured,\newline{}
+%		and unstructured data models.}
+%
+%		\vspace{1em}
+%		\course{Processing Formal and Natural Languages}{Building on Computation and Logic, an overview of models and\newline{}
+%		techniques used to describe and analyse both formal and natural\newline{}
+%		languages, including formal languages and grammars, probabilistic\newline{}
+%		grammar, semantic analysis, and human language processing.}
+%		\course{Reasoning and Agents}{Focusing on approaches relating to representation, reasoning and\newline{}
+%		planning for solving real world inference, in the context of formalised agents\newline{}
+%		capable of sensing the environment and taking actions that affect the current state.}
+%		\course{Algorithms, Data Structures, and Learning}{Presented key symbolic and numerical data structures and algorithms\newline{}
+%		for manipulating them.}
+%		\course{Introduction to Computer Systems}{Covering the design, implementation and engineering of digital\newline{}
+%		computer systems, and the basics of their internal structure.}
+%		\course{Introduction to Software Engineering}{An overview of software engineering, covering the main activities and\newline{}
+%		concerns of industrial and commercial software engineers.}
+%
+%		\vspace{1em}
+%		\course{Algorithms and Data Structures}{General techniques for the design of efficient algorithms and\newline{}
+%		appropriate mathematical tools for analysing their performance.}
+%		\course{Database Systems}{Underlying principles of the design, implementation and optimisation\newline{}
+%		of databases and database management systems. Briefly covered\newline{}
+%		object-oriented, object-relational systems, semistructured data and the\newline{}
+%		relationship between databases and XML.}
+%		\course{Operating Systems}{An introduction to the design and implementation of general purpose\newline{}
+%		multi-tasking operating systems, concentrating on the kernel aspects\newline{}
+%		of such systems with the emphasis being on concepts which lead to\newline{}
+%		practical implementations.}
+%		\course{Software Engineering with Objects and Components}{Basics of the design and implementation of software systems using\newline{}
+%		object-oriented techniques, mostly oriented to creating component\newline{}
+%		based designs. The course reviewed basic object-oriented techniques\newline{}
+%		and how they support the creation of component based designs,\newline{}
+%		as well as high level modelling of systems using UML.}
+%		\course{Software Engineering Large Practical}{Development of an Android application for student elections, utilising\newline{}
+%		XML parsing, an SQL database, variable storage, emailing, and\newline{}
+%		interfacing with Twitter.}
+%		\course{Professional Issues}{A general awareness of the commercial, engineering and professional\newline{}
+%		issues, complementary to the necessary scientific knowledge and\newline{}
+%		technical skills, that impinge on the work of the computing professional.}
+%		\course{Computer Communications and Networks}{An introduction to the fundementals of computer communication and\newline{}
+%		networking, covering fundamental concepts, principles, and techniques.\newline{}
+%		The course introduced basic networking concepts, a variety of Internet\newline{}
+%		protocols, and also a hands-on exercise in network management.}
+%		\course{Computer Security}{The course focussed on the protection of computer systems and their\newline{}
+%		data from malicious threats which may compromise integrity,\newline{}
+%		availability, or confidentiality.}
+%		\course{Foundations of Natural Language Processing}{Covered some of the linguistic and algorithmic foundations of natural\newline{}
+%		language processing with a strongly empirical bent, using corpus\newline{}
+%		data to illustrate both core linguistic concepts and algorithms,}
+%		\course{Software Testing}{Based on the IEEE Software Engineering 2004 Software Testing\newline{}
+%		syllabus, the course taught the skills needed to select and apply an\newline{}
+%		appropriate testing strategy with proper testing technique.}
+%		\course{System Design Project}{A group project centred around building a fully autonomous Lego robot\newline{}
+%		to play table football. Involved writing vision parsing systems, bluetooth\newline{}
+%		communications, hardware design, all with a very strong group focus.}
+
+	\cventry{2003--2009}{Secondary Education}{Hutchesons' Grammar School}{Glasgow}{}{
+		\begin{itemize}
+		\item Advanced Higher \textit{2009}
+			\grade {Computing}{A}
+		\item A Level \textit{2009}
+			\doublegrade{Pure Mathematics}{A}{Physics}{A}
+		\item Higher \textit{2008}
+			\doublegrade{English}{A}{Maths}{A}
+			\doublegrade{Chemistry}{A}{Physics}{A}
+			\grade{Geography}{B}
+		\item Intermediate 2 \textit{2007}
+			\grade{English}{A}
+		\item Standard Grade (Credit) \textit{2007}
+			\doublegrade{Chemistry}{1}{Physics}{1}
+			\doublegrade{German}{1}{Geography}{1}
+			\doublegrade{Music}{1}{Computing}{1}
+		\grade{Young Enterprise}{Pass}
+		\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\section{Languages}
+	\cvitemwithcomment{English}{Native Speaker}{}
+	\cvitemwithcomment{German}{Conversational}{2\begin{math}\frac{1}{2}\end{math} years schooling, German exchange visit to N{\"u}rnberg}
+
+%\section{Extra 1}
+%	\cvlistitem{Item 1}
+%	\cvlistitem{Item 2}
+%	\cvlistitem{Item 3}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+%\section{Extra 2}
+%	\cvlistdoubleitem{Item 1}{Item 4}
+%	\cvlistdoubleitem{Item 2}{Item 5}
+%	\cvlistdoubleitem{Item 3}{}
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 05, 2013}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+
+\end{document}
