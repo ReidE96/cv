@@ -18,9 +18,10 @@
 
 \newcommand{\startgrades}{\vspace{-0.3em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
 \newcommand{\finishgrades}{\end{multicols}\end{itemize}}
-\newcommand{\grade}[2]{\startgrades \item #1 \item #2 \finishgrades}
+\newcommand{\singlegrade}[2]{\startgrades \item #1 \item #2 \finishgrades}
 \newcommand{\doublegrade}[4]{\startgrades \item #1 \item #2 \item #3 \item #4 \finishgrades}
 \newcommand{\course}[2]{\hspace{2em}\cvitem{\emph{#1}}{#2}\vspace{0.2em}}
+\newcommand{\grade}[1]{{\footnotesize\textit{(#1)}}}
 
 % adjust the page margins
 \usepackage[scale=0.75,left=1in,right=1in,top=0.5in,bottom=0.5in]{geometry}
@@ -55,7 +56,7 @@
 \section{Education}
 	\cventry{2009--2014}{BEng Software Engineering}{University of Edinburgh}{UK}{\textbf{(Ongoing)}}{  % arguments 3 to 6 can be left empty
 		Broad and in-depth coverage of various elements of informatics, from basics of functional programming, to software testing based on the IEEE syllabus, natural language processing, and expectations of a computing professional in a professional environment.\newline{}
-		Courses included Algorithms and Data Structures, Object-Oriented Programming, Functional Programming, Computer Security, Operating Systems, and Software Testing, plus a series of Mathematics for Informatics courses.
+		Courses included Algorithms and Data Structures \grade{40}, Object-Oriented Programming \grade{100}, Functional Programming \grade{97}, Computer Security \grade{65}, Operating Systems \grade{46}, and\newline{}Software Testing \grade{69}, plus a series of Mathematics for Informatics courses.
 %
 		\subsection{\hspace{-8em}Software Engineering Large Practical}
 		Using the Android Developer Toolkit, planned and deployed an app targetting Android 2.3.3 intended to aid students in getting involved with student association elections, including voting, reading statements, rating candidates, and tweeting to encourage others to vote.
@@ -66,7 +67,7 @@
 		\subsection{\hspace{-8em}Final Year Project}
 		\cvitem{title}{\emph{Javascript with Blame}}
 		\cvitem{supervisor}{Phil Wadler}
-		The project aims to build a tool, based on blame calculus (a simple way to interface statically, dynamically, and polymorphically typed languages), to enable cross-module type declarations in Javascript, monitoring type discipline and reporting which module is at fault should discipline be violated.
+		The project aims to build a tool, based on blame calculus (a simple way to interface statically, dynamically, and polymorphically typed languages), to enable cross-module type declarations in Javascript, monitoring type discipline and reporting which module is at fault should\newline{}discipline be violated.
 	}
 
 \section{Experience}
@@ -74,7 +75,7 @@
     {Developed a trio of Android and iOS games using the GameClosure devkit and based on recent autism research to help autistic children develop and improve social understanding}
 
 	\cventry{Jun 2012 --
-	Sept 2012}{Backend Developer}{Accendo Design}{Edinburgh}{}{LAMP development at fast-paced startup, developing a web-based tool for property management powered by ooPHP. Also created PINFUD markup language for UX design, and wrote Javascript code for frontend}
+	Sept 2012}{Backend Developer}{Accendo Design}{Edinburgh}{}{LAMP development at fast-paced startup, developing a web-based tool for property \newline{}management powered by ooPHP. Also created PINFUD markup language for UX design, and wrote Javascript code for frontend}
 
 	\cventry{Jul 2011 -- Aug 2011}{Web Intern}{Fashion Rocks}{Edinburgh}{}{SEO for charity fashion event, plus Magento work for event's online shop\newline{}General LAMP backend support for additional sites}
 
@@ -106,7 +107,7 @@
 	\cventry{2003--2009}{Secondary Education}{Hutchesons' Grammar School}{Glasgow}{}{
 		\begin{itemize}
 		\item Advanced Higher \textit{2009}
-			\grade {Computing}{A}
+			\singlegrade {Computing}{A}
 		\item A Level \textit{2009}
 			\doublegrade{Pure Mathematics}{A}{Physics}{A}
 		\end{itemize}}  % arguments 3 to 6 can be left empty
