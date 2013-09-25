@@ -18,10 +18,10 @@
 
 \newcommand{\startgrades}{\vspace{-0.2em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
 \newcommand{\finishgrades}{\end{multicols}\end{itemize}}
-\newcommand{\singlegrade}[2]{\startgrades \item #1 \item #2 \finishgrades}
-\newcommand{\doublegrade}[4]{\startgrades \item #1 \item #2 \item #3 \item #4 \finishgrades}
-\newcommand{\course}[2]{\hspace{2em}\cvitem{\emph{#1}}{#2}\vspace{0.2em}}
+\newcommand{\singlegrade}[2]{\startgrades \item #1 \item[] #2 \finishgrades}
+\newcommand{\doublegrade}[4]{\startgrades \item #1 \item[] #2 \item #3 \item[] #4 \finishgrades}
 \newcommand{\grade}[1]{{\footnotesize\textit{(#1)}}}
+\newcommand{\prize}[2]{\item[]\hspace{-1em}\rlap{#1}\hspace{0.3\textwidth}\rlap{#2}}
 
 % adjust the page margins
 \usepackage[scale=0.75, margin=0.75in, bottom=0.5in]{geometry}
@@ -71,6 +71,14 @@
 		The project aims to build a tool, based on blame calculus (a simple way to interface statically,\newline{}dynamically, and polymorphically typed languages), to enable cross-module type declarations in Javascript, monitoring type discipline and reporting which module is at fault should discipline be violated.
 	}
 
+	\cventry{2003--2009}{Secondary Education}{Hutchesons' Grammar School}{Glasgow}{}{
+		\begin{itemize}
+		\item Advanced Higher \textit{2009}
+			\singlegrade {Computing}{A}
+		\item A Level \textit{2009}
+			\doublegrade{Pure Mathematics}{A}{Physics}{A}
+		\end{itemize}}  % arguments 3 to 6 can be left empty
+
 \section{Experience}
     \cventry{Jun 2013 -- Sept 2013}{Intern}{Interface 3}{Edinburgh}{}
     {Developed a trio of Android and iOS games using the GameClosure devkit and based on recent autism research to help autistic children develop and improve social understanding}
@@ -93,20 +101,28 @@
 	\cvitem{AirDrive}{Project to permit usage of initally Gmail, and latterly any IMAP inbox, as cloud storage {\footnotesize(Development mostly ceased around late 2010-early 2011 following increased adoption of Dropbox and similar)}}
 	\cvitem{Tabletop Roleplay Online}{Combined personal interest in tabletop RPGs with an intent to dabble in C\# to create a classic client-server TCP multi-user chat client with dice rolling functionality}
 
-\section{Interests}
-	\cvitem{Roleplaying}{GEAS {\footnotesize(Edinburgh University Roleplaying Society)} President 2013--14, Secretary 2012--13, Nationals Coordinator 2011--12\newline{}Conpulsion {\footnotesize(www.conpulsion.org)} Coordinator 2014, Guest Liason 2013}
+\section{Additional}
+	\cvitem{Prizes}{\begin{itemize}
+		\prize{\textbf{Google Prize}}{System Design Project \grade{2013}}
+		\prize{\textbf{Dux in Computing}}{Hutchesons' Grammar School Prizegiving \grade{2009}}
+	\end{itemize}}
+	\vspace{-1.4em}
+	\cvitem{Roleplaying}{
+		\textbf{GEAS (Edinburgh University Roleplaying Society)}\newline{}
+		President 2013--14, Secretary 2012--13, Nationals Coordinator 2011--12\newline{}
+		\textbf{Conpulsion}\newline{}
+		Coordinator 2014, Guest Liason 2013
+	}
 	\vspace{-0.1\baselineskip}
-	\cvitem{Archery}{EUAC Webmaster 2010--11}
+	\cvitem{Archery}{
+		\textbf{Edinburgh University Archery Club}\newline{}
+		Webmaster 2010--11
+	}
 	\vspace{-0.1\baselineskip}
-	\cvitem{Karate}{EUSKC Treasurer 2010--11, Social Secretary 2010--11, Interim Secretary 2010--11}
-
-	\cventry{2003--2009}{Secondary Education}{Hutchesons' Grammar School}{Glasgow}{}{
-		\begin{itemize}
-		\item Advanced Higher \textit{2009}
-			\singlegrade {Computing}{A}
-		\item A Level \textit{2009}
-			\doublegrade{Pure Mathematics}{A}{Physics}{A}
-		\end{itemize}}  % arguments 3 to 6 can be left empty
+	\cvitem{Karate}{
+		\textbf{Edinburgh University Shotokan Karate Club}\newline{}
+		Treasurer 2010--11, Social Secretary 2010--11, Interim Secretary 2010--11
+	}
 
 %\section{Extra 1}
 %	\cvlistitem{Item 1}
