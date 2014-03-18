@@ -1,10 +1,10 @@
-\documentclass[sans,a4paper]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[sans,a4paper]{moderncv}
 
-% moderncv themes
-\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{red}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% moderncv setup
+\moderncvstyle{classic}
+\moderncvcolor{red}
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}
 
 % font
 \usepackage{fontspec}
@@ -14,11 +14,12 @@
 }
 
 % character encoding
-\usepackage[utf8]{inputenc}                  % if you are not using xelatex or lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}
 
 % multiple column lists
 \usepackage{multicol}
 
+% some commands to make formatting easier
 \newcommand{\startgrades}{\vspace{-0.1em}\begin{itemize}\setlength{\multicolsep}{0.4em}\begin{multicols}{4}}
 \newcommand{\finishgrades}{\end{multicols}\end{itemize}}
 \newcommand{\singlegrade}[2]{\startgrades \item #1 \item[] #2 \finishgrades}
@@ -28,8 +29,6 @@
 
 % adjust the page margins
 \usepackage[scale=0.75, margin=0.75in, bottom=0.5in]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % simplifying nths
 \usepackage[super]{nth}
@@ -37,28 +36,25 @@
 % personal data
 \firstname{Euan}
 \familyname{Reid}
-\address{2/2 Huntingdon Place}{Edinburgh EH7 4AT}    % optional, remove / comment the line if not wanted
-\phone[mobile]{+44~7540~371~076}                     % optional, remove / comment the line if not wanted
-\phone[fixed]{+44~131~237~0286}                      % optional, remove / comment the line if not wanted
-\email{euan@reide96.com}                          % optional, remove / comment the line if not wanted
-\homepage{www.reide96.com}                    % optional, remove / comment the line if not wanted
-\social[linkedin]{euanfreid}                        % optional, remove / comment the line if not wanted
-\social[twitter]{EuanReid}                             % optional, remove / comment the line if not wanted
-\social[github]{ReidE96}                              % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}            % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+\address{2/2 Huntingdon Place}{Edinburgh EH7 4AT}
+\phone[mobile]{+44~7540~371~076}
+\phone[fixed]{+44~131~237~0286}
+\email{euan@reide96.com}
+\homepage{www.reide96.com}
+\social[linkedin]{euanfreid}
+\social[twitter]{EuanReid}
+\social[github]{ReidE96}
 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+%-----       cv       ---------------------------------------------------------
 \makecvtitle
 \vspace{-3em}
 
 \section{Education}
-	\cventry{2009--2014}{BSc Computer Science}{University of Edinburgh}{UK}{\textbf{(Ongoing)}}{  % arguments 3 to 6 can be left empty
+	\cventry{2009--2014}{BSc Computer Science}{University of Edinburgh}{UK}{\textbf{(Ongoing)}}{
 		Broad and in-depth coverage of various elements of informatics, from basics of functional\newline{}programming, to software testing based on the IEEE syllabus, natural language processing, and expectations of a computing professional in a professional environment.\newline{}
 		Courses included Algorithms and Data Structures, Object-Oriented Programming, Functional\newline{}Programming, Computer Security, Operating Systems, and Software Testing, plus a series of\newline{}Mathematics for Informatics courses.
 %
@@ -67,11 +63,6 @@
 %
 		\subsection{\hspace{-8em}System Design Project}
 		Working in a team, designed and build a robot using LEGO Mindstorms and complementary\newline{}technologies, demonstrated in a tournament against similar robots judged by professionals from the IT industry. Various companies awarded prizes, with Google giving theirs to our team.
-%
-%		\subsection{\hspace{-8em}Final Year Project}
-%		\cvitem{title}{\emph{Javascript with Blame}}
-%		\cvitem{supervisor}{Phil Wadler}
-%		The project aims to build a tool, based on blame calculus (a simple way to interface statically,\newline{}dynamically, and polymorphically typed languages), to enable cross-module type declarations in Javascript, monitoring type discipline and reporting which module is at fault should discipline be violated.
 	}
 
 	\cventry{2003--2009}{Secondary Education}{Hutchesons' Grammar School}{Glasgow}{}{
@@ -80,7 +71,7 @@
 			\singlegrade {Computing}{A}
 		\item A Level \textit{2009}
 			\doublegrade{Pure Mathematics}{A}{Physics}{A}
-		\end{itemize}}  % arguments 3 to 6 can be left empty
+		\end{itemize}
 
 \section{Experience}
     \cventry{Jun 2013 -- Sept 2013}{Intern}{Interface 3}{Edinburgh}{}
@@ -129,39 +120,4 @@
 		\textbf{Edinburgh University Shotokan Karate Club}\newline{}
 		Treasurer 2010--11, Social Secretary 2010--11, Interim Secretary 2010--11
 	}
-
-%\section{Extra 1}
-%	\cvlistitem{Item 1}
-%	\cvlistitem{Item 2}
-%	\cvlistitem{Item 3}
-
-\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
-
-%\section{Extra 2}
-%	\cvlistdoubleitem{Item 1}{Item 4}
-%	\cvlistdoubleitem{Item 2}{Item 5}
-%	\cvlistdoubleitem{Item 3}{}
-
-%\clearpage
-%%-----       letter       ---------------------------------------------------------
-%% recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 05, 2013}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
-%
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-%
-%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-%
-%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-%
-%Albert Einstein discovered that $e=mc^2$ in 1905.
-%
-%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-%
-%\makeletterclosing
-
 \end{document}
